@@ -2,15 +2,16 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 if (license !== "None") {
-  return `![GitHub license](https://img.shields.io/badge/license-${license})`
+  return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
 }
+return "";
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `\n* [License](#License)\n`;
+    return `\n* [License](#license)\n`;
   }
   return '';
 }
@@ -23,14 +24,44 @@ function renderLicenseSection(license) {
     
     This project is Licesned under the ${license} license.`;
   }
-  return '';
+  return ''; 
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  
   return `# ${data.title}
+by ${data.name}
+  ${renderLicenseBadge(data.license)}
+  
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  ${renderLicenseLink(data.license)}
+## Installation
+  ${data.installation}
+## Description
+${data.description}
+## Usage
+${data.usage}
 
-`;
+${renderLicenseSection(data.license)}
+
+## Contributing
+${data.contributing}
+## Tests
+${data.tests}
+## Questions
+${data.questions}
+
+Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+
+
+ `;
+
 }
 
 module.exports = generateMarkdown;
