@@ -1,4 +1,4 @@
-# a
+# How to Win
 by undefined
   ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
   
@@ -12,22 +12,22 @@ by undefined
 * [License](#license)
 
 ## Installation
-  a
+  Through Windows only
 ## Description
-a
+A plan on how to win at anything!
 ## Usage
-a
+You use it to plan you victories
 
 ## License
     
     This project is Licesned under the MIT license.
 
 ## Contributing
-a
+Only me
 ## Tests
-a
+Can only test on Windows
 ## Questions
-a
+name@me.com
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
